@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .nav {
+            display: flex;
+            background-color: black;
+            color: white;
+            justify-content: space-evenly;
+            align-items: center; 
+            text-transform: uppercase;
+            font-weight: 800;
+            padding: 5px 0;
+            
+        }
+        h4 {
+            text-transform: uppercase;
+        }
+        .nav img {
+            width: 30px;
+            border: 2px solid white;
+            border-radius: 50%;
+            vertical-align: middle;
+
+        }
+        .main {
+            width: 80%;
+            margin: 70px auto;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            
+        }
+        .main h1 {
+            letter-spacing: 10px;
+            margin: 0;
+        }
+        .pav {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 15px auto;
+        }
+        .pav img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            /*width: 100%; */
+        }
+        .items {
+            display: flex;
+            justify-content: center;
+            /* align-items: stretch; */
+            gap: 20px;
+        }
+        .item {
+            width: 20%;
+            border: 2px solid white;
+            padding: 0 15px;
+            
+        }
+        .button {
+            padding-bottom: 20px;
+        }
+        .button a {
+            color: purple;
+            font-weight: 800;
+        }
+        .footer {
+            text-transform:uppercase;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .separetor {
+            height: 3px;
+            width: 20px;
+            background-color: white;
+            margin: -15px auto 0
+        }
+
+    </style>
+    <title>section</title>
+</head>
+<body>
+    <div class="nav">
+        <a href=""><div>Products</div></a>
+        <a href=""><div>Discounts</div></a>
+        <div class="icon"><a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQmXutTBmWskf4t50PnOsbSidfLheoN_P89g&s" alt=""></a></div>
+        <a href=""><div>Blog</div></a>
+        <a href=""><div>About us</div></a>
+    </div>
+    <div class="main">
+        <div class="products">
+            <h1>Products</h1>
+            <p>Afordable quality, every time</p>
+        </div>
+        <div class="items">
+            <div class="item">
+                <div class="pav"><img src="https://preppykitchen.com/wp-content/uploads/2024/02/Vanilla-Ice-Cream-Recipe-Card.jpg" alt=""></div>
+                <h4>vanilla ice cream</h4>
+                <div class="separetor"></div>
+                <p>Creamy, sweet and classic, it's a timeless favorite.</p>
+                <div class="button"><a href="">Read more</a></div>
+            </div>
+            <div class="item">
+                <div class="pav"><img src="https://kathleenscravings.com/wp-content/uploads/2024/04/Ninja-Creami-Mixed-Berry-Sorbet-5.jpg" alt=""></div>
+                <h4>fruit sorbet</h4>
+                <div class="separetor"></div>
+                <p>Refreshing and tangy, it bursts with natural fruit flavors.</p>
+                <div class="button"><a href="">Read more</a></div>
+            </div>
+            <div class="item">
+                <div class="pav"><img src="https://foolproofliving.com/wp-content/uploads/2013/10/recipe-for-honey-chocolate-ice-cream.jpg" alt=""></div>
+                <h4>chocolate gelato</h4>
+                <div class="separetor"></div>
+                <p>Rich, undulgent and oh-so-smooth, a chocoholic's dream.</p>
+                <div class="button"><a href="">Read more</a></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">© ice+cream & co</div>
+</body>
+</html>
