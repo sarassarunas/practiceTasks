@@ -42,12 +42,6 @@ a {
     line-height: 150%;
     font-weight: 500;
 }
-
-/* mobile - reikia aprasyt @media su max?*/ 
-
-/* .mobileCreateNow {
-    display: block;
-} */
 .header p {
     display: none;
 }
@@ -61,9 +55,6 @@ a {
 .logo img {
     height: 28px;
 }
-/* .loginForm {
-    width: 100%;
-} */
 .email input,.pass input {
     width: 100%;
     padding: 13px;
