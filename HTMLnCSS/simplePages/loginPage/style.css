@@ -1,0 +1,407 @@
+* {
+    box-sizing: border-box;
+}
+body,button,input {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    margin: 29px 26px 32px 26px;
+}
+label {
+    display: block;
+}
+/* .remember label {
+    display: inline-block;
+} */
+.remember {
+    display: flex;
+}
+.split {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.line {
+    /* width: 146px; */
+    width: 100%;
+    height: 1px;
+    background-color: #A0AEC0;
+}
+.seperator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+}
+a {
+    text-decoration: none;
+    color: #1C4532;
+    border-bottom: 1px solid #1C4532;
+    font-size: 14px;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+/* mobile - reikia aprasyt @media su max?*/ 
+
+/* .mobileCreateNow {
+    display: block;
+} */
+.header p {
+    display: none;
+}
+
+.right {
+    display: none;
+}
+.visibility {
+    display: none;
+}
+.logo img {
+    height: 28px;
+}
+/* .loginForm {
+    width: 100%;
+} */
+.email input,.pass input {
+    width: 100%;
+    padding: 13px;
+    border-radius: 12px;
+    border: 1px solid #CBD5E0;
+}
+.email input::placeholder,.pass input::placeholder {
+    color: #4A5568;
+    line-height: 20px;
+    letter-spacing: -0.15px;
+    font-size: 16px;
+}
+.email {
+    margin-bottom: 38px;
+}
+.pass {
+    margin-bottom: 23px;
+}
+button {
+    width: 100%;
+}
+.header h2 {
+    font-size: 36px;
+}
+.email label,.pass label {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    padding-bottom: 18px;
+    color: #718096;
+}
+.remember label {
+    font-size: 14px;
+    line-height: 39px;
+    color: #718096;
+    font-weight: 400;
+}
+.remember input {
+    line-height: 39px;
+}
+.forgotPass {
+    font-size: 14px;
+    line-height: 150%;
+}
+.signIn button {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 12px 0;
+    border-radius: 30px;
+    border: none;
+    background-color: #1C4532;
+    color: white;
+    margin-bottom: 42px;
+    margin-top: 46px;
+}
+.seperator {
+    margin-bottom: 38px;
+}
+.loginButton button {
+    color: #718096;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 30px;
+    border: 1px solid #CBD5E0;
+    background-color: white;
+}
+.google {
+    margin-bottom: 20px;
+}
+.facebook {
+    margin-bottom: 35px;
+}
+.mobileCreateNow {
+    text-align: center;
+    color: #718096;
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 14px;
+}
+.facebook button {
+    background-image: url(./assets/facebook.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 20px;
+}
+.google button {
+    background-image: url(./assets/google.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 20px;
+}
+
+/* tablet 768px */
+@media screen and (min-width: 768px){
+    body {
+        margin: 0;
+    }
+    .left {
+        width: 688px;
+        margin: 85px auto;
+    }
+    .logo img {
+        width: 180px;
+        height: auto;
+    }
+    .header p {
+        display: inline-block;
+        color: #718096;
+        font-size: 18px;
+        line-height: 150%;
+        margin-bottom: 45px;
+        margin-top: 0;
+
+    }
+    .header a {
+        font-size: 18px;
+        line-height: 150%;
+        font-weight: 500;
+    }
+    .mobileCreateNow{
+        display: none;
+    }
+    .header h2 {
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 100%;
+        color: #171923;
+        margin: 74px 0 39px;
+    }
+    .header {
+        margin-left: 39px;
+    }
+    .loginForm {
+        margin-left: 39px;
+        
+    }
+    .pass {
+        position: relative;
+    }
+    .pass,.email {
+        width: 528px;
+    }
+    .visibility {
+        display: block;
+        background-image: url(./assets/aye.svg);
+        width: 54px;
+        height: 40px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        right: 1px;
+        top: 50%;
+        border-left: 1px solid #CFD9E0;
+    }
+    .email input,.pass input {
+        padding: 18px;
+    }
+    .signIn button {
+        border-radius: 20px;
+        padding: 20px 0;
+        margin-bottom: 57px;
+    }
+    .remember label {
+        font-size: 16px;
+        margin-left: 9px;
+    }
+    .forgotPass {
+        margin-right: 21px;
+    }
+    .forgotPass a {
+        font-size: 16px;
+    }
+    .seperator {
+        margin-bottom: 53px;
+    }
+    .loginButton button{
+        font-size: 18px;
+        padding: 21px 31px;
+        background-position-x: 31px;
+    }
+    .google {
+        margin-bottom: 39px;
+    }
+}
+/* pc 1024+ */
+@media screen and (min-width: 1024px){
+    .right{
+        display: block;
+    }
+    main {
+        display: flex;
+        width: 100%;
+        
+    }
+    .left {
+        width: 48%;
+        margin: 0;
+    }
+    .right {
+        width: 52%;
+        margin: 0;
+        background-image: url(./assets/bg-svg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+    .left .container {
+        margin: 65px 50px 113px 42px;
+    }
+    .pass, .email {
+        width: 100%;
+    }
+    .support {
+        color: #F7FAFC;
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        margin: 57px 0 153px;
+    }
+    .imgInfo {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    .support h4 {
+        margin: 0;
+    }
+    .description {
+        width: 57%;
+        margin: 0 18px 0 44px;
+        padding: 45px 0 33px;
+    }
+    .img {
+        width: 43%;
+    }
+    .img img {
+        width: 100%;
+    }
+    .description h3 {
+        font-size: 34px;
+        color: #1C4532;
+        letter-spacing: -2%;
+        line-height: 37px;
+        margin: 0;
+    }
+    .imgInfoWrapper {
+        position: relative;
+        width: 68.5%;
+        margin: 0 auto;
+    }
+    .extraEarnings {
+        position: absolute;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        right: 0;
+        bottom: -50px;
+        width: 50%;
+        padding: 20px 0 26px;
+    }
+    .chartIcon {
+        width: 56px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 17px;
+    }
+    .earnings span {
+        display: block;
+    }
+    .earn {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #1C4532;
+    }
+    .cash {
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 32px;
+        color: #1C4532;
+    }
+    /* .earnings {
+        padding: 20px 96px 26px 18px;
+    } */
+    .description p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28px;
+        color: #718096;
+
+    }
+    .description button {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 500;
+        border-radius: 70px;
+        background-color: #1C4532;
+        color: #F7FAFC;
+        padding: 9px 47px;
+        width: auto;
+        border: none;
+    }
+    .supportDescr {
+        width: 66.5%;
+        margin: 120px auto 0;
+        text-align: center;
+    }
+    .supportDescr h2 {
+        color: #F7FAFC;
+        font-size: 40px;
+        line-height: 100%;
+        font-weight: 600;
+        margin: 0;
+    }
+    .supportDescr p {
+        color: #CFD9E0;
+        font-size: 20px;
+        line-height: 138.5%;
+        font-weight: 400;
+        margin-top: 36px;
+        margin-bottom: 0px;
+    }
+    .pagination {
+        margin-top: 86px;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+    
+
+
+}

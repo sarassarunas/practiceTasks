@@ -1,0 +1,15 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 765 1023" width="765" height="1023">
+	<title>bg-svg</title>
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-357.903,707.402,-716.68,-362.598,865.244,-213.701)">
+			<stop offset="0" stop-color="#f7fafc" stop-opacity="1"/>
+			<stop offset="1" stop-color="#edf2f7" stop-opacity="0"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: #1c4532 } 
+		.s1 { opacity: .4;fill: url(#g1) } 
+	</style>
+	<path class="s0" d="m0-1h766v1024h-766z"/>
+	<path class="s1" d="m507.3 493.7c-198.1-100.3-278.3-339.4-179.3-535 98.9-195.6 339.1-272.7 537.2-172.4 198.2 100.3 278.4 339.4 179.4 535-98.9 195.6-339.1 272.7-537.3 172.4z"/>
+</svg>
