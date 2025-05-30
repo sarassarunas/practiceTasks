@@ -1,0 +1,71 @@
+table tbody tr .imgContainer {
+    width: 200px;
+    position: relative;
+}
+img {
+    width: 100%;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.kainos {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 35px;
+}
+.price {
+    font-weight: 800;
+}
+.oldPrice {
+    text-decoration: line-through;
+    color: grey;
+    font-size: 12px;
+}
+.priceWithDiscount {
+    color: red;
+}
+.displayDiscount {
+    position: absolute;
+    top:10px;
+    right: 10px;
+    color: white;
+    background-color: red;
+    padding: 5px 10px;
+}
+table { 
+    border-collapse: collapse;
+    width: 100%;
+}
+tbody tr {
+    border-top: 1px solid grey;
+}
+.title {
+    padding: 5px 0 10px;
+}
+.rating {
+    padding-bottom: 25px;
+    position: relative;
+    width: max-content;
+}
+.rating .active {
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.aprasymas {
+    max-width: 500px;
+}
+a {
+    text-decoration: none;
+    color: #2e82d5;
+}
+button {
+    background-color: #fcb800;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.imgContainer {
+    max-width: 150px;
+}
