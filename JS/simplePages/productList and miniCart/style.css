@@ -68,4 +68,51 @@ button {
 }
 .imgContainer {
     max-width: 150px;
+    display: inline-block;
+}
+.shopingCart .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* .shopingCart .container div {
+    width: 50%;
+} */
+/* .krepselis, .total {
+    width: 50%;
+} */
+.krepselis .itemContainer, .total {
+    text-align: center;
+}
+/* .InfoFields label {
+    display: block;
+} */
+input[type="submit"] {
+    margin-top: 18px;
+}
+.infoFields {
+    text-align: left;
+}
+.recipient, .address {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.recipient input {
+    min-width: 200px;
+}
+input#postCode {
+    width: 75px;
+}
+input#address {
+    min-width: 325px;
+}
+.infoFields input {
+    margin: 3px 0 5px;
+}
+.shipping {
+    text-align: left;
+    transform: translate(-50%, 5px);
+    width: fit-content;
+    margin-left: 50%;
 }

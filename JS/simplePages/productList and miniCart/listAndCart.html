@@ -32,8 +32,44 @@
     </section>
     <section class="shopingCart" style="display: none;">
         <div class="container">
-            <div class="krepselis">Krepselio PSL</div>
-            <div class="cartSum">Krepselio kaina</div>
+            <div class="krepselis">Jūsų krepšelis yra tuščias</div>
+            <div class="total" style="display: none;">   
+                <form action="" onsubmit="newSubmit(event)">
+                    <div class="cartSum"></div>
+                    <div class="shipping" onchange="shipping()" >
+                        <input type="radio" id="pickUp" name="shipping" value="0" checked>
+                        <label for="pickUp">Atsiimsiu pats - nemokama</label><br>
+                        <input type="radio" id="standart" name="shipping" value="2.5">
+                        <label for="standart">Standartinis 3-5 d.d. - 2.50 €</label><br>  
+                        <input type="radio" id="premium" name="shipping" value="5">
+                        <label for="premium">Greitas 1-2 d.d. - 5 €</label><br><br>                    
+                    </div>
+                    <div class="totalShoppingPrice"></div>
+                    <div class="infoFields">
+                        <div class="recipient">
+                            <div class="name">
+                                <label for="name">Jūsų vardas</label><br>
+                                <input type="text" id="name" placeholder="Vardenis">
+                            </div>
+                            <div class="lastName">
+                                <label for="lastName">Jūsų pavardė</label><br>
+                                <input type="text" id="lastName" placeholder="Pavardenis">
+                            </div>
+                        </div>
+                        <div class="address">
+                            <div class="addressField">
+                                <label for="address">Pristatymo adresas</label><br>
+                                <input type="text" id="address" placeholder="Gatvė, namo - buto numeris, Miestas">
+                            </div>
+                            <div class="postCode">
+                                <label for="postCode">Pašto kodas</label><br>
+                                <input type="text" id="postCode" placeholder="LT-12345">
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Užsakyti">
+                </form> 
+            </div>
         </div>
     </section>
 </body>
