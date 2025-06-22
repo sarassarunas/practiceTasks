@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="./QRCode.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR code maker</title>
+    <script>
+        var qrcode;
+
+        function makeQR() {
+            let data = document.querySelector('input.qrInput').value;
+            if(qrcode) {
+                document.getElementById('qrcode').innerHTML='';
+            }
+            qrcode = new QRCode(document.getElementById('qrcode'), {
+            text: data,
+            width: 128,
+            height: 128,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+            });
+        }
+    </script>
+    <style>
+        .container {
+            max-width: 1024px;
+            margin: 40px auto; 
+            text-align: center;
+        }
+        #qrcode {
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>QR code maker</h1>
+        <div class="inputField">
+            <label for="data"></label>
+            <input class="qrInput" type="text" id="data" placeholder="Enter what you want">
+            <button onclick="makeQR()">Generate QR</button>
+        </div>
+        <div id="qrcode"></div>
+    </div>
+</body>
+</html>
